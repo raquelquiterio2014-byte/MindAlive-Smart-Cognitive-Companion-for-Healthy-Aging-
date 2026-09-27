@@ -1,90 +1,23 @@
-# MindAlive-Smart-Cognitive-Companion-for-Healthy-Aging-
-MindAlive, a cognitive support application designed to promote mental stimulation, digital inclusion, and healthy aging through technology and Artificial Intelligence. 
- MindAlive – Smart Cognitive Companion for Healthy Aging 💜🧠
+# MindAlive
 
- **MindAlive**, a cognitive support application designed to promote mental stimulation, digital inclusion, and healthy aging through technology and Artificial Intelligence.
+Desktop learning project in Python with a CustomTkinter interface, cognitive mini-games and an optional Gemini assistant. The code is a prototype; it is not a clinical or professional service.
 
-The main goal of this project is to provide older adults with an accessible and friendly digital environment where they can engage in cognitive activities, exercise memory and reasoning skills, and interact with an intelligent virtual assistant.
+## Run locally
 
-✨ Key Features
+Use a Python environment with a graphical desktop. From the repository root:
 
-🤖 Virtual Assistant (Ana & Sandro)
+```bash
+python -m venv .venv
+python -m pip install -r requirements.txt
+python MindAlive.py
+```
 
-* AI-powered conversations using Google Gemini
-  
-* Friendly and supportive interaction
-  
-* Personalized virtual companions
+Activate the virtual environment before installing packages if desired. For the AI feature, set `GEMINI_API_KEY` in your operating-system environment. Example in PowerShell: `$env:GEMINI_API_KEY = "your-key"`; in Bash: `export GEMINI_API_KEY="your-key"`. Never commit a real key. Without a key, the games remain available and the assistant reports that it is unconfigured.
 
-🧠 Memory Quiz
+## Scope and verification
 
-* Cognitive exercises and memory challenges
-  
-* Immediate feedback and engagement
+The repo contains memory, sequence, association, hangman and word-search activities, plus an optional chat. The optional portrait assets `assets/ana.png` and `assets/sandro.png` are not included; the app handles their absence. The code has been checked for Python syntax; the graphical interface and external API were not run here. API access may incur provider limits or costs.
 
-🧩 Cognitive Association
+## Next evidence for a portfolio
 
-* Association and recognition activities
-  
-* Memory reinforcement exercises
-
-🔢 Logic Sequence
-
-* Pattern recognition and logical reasoning activities
-
-✏️ Hangman Game
-
-* Vocabulary and language stimulation
-
-🔎 Word Search
-
-* Attention, concentration, and visual recognition training
-
-🛠️ Technologies Used
-
-• Python
-
-• CustomTkinter
-
-• Google Gemini AI
-
-• Pillow (PIL)
-
-• PyInstaller
-
-• Object-Oriented Programming (OOP)
-
-• Git & GitHub
-
-📚 Key Learnings and Skills Developed
-
-Throughout this project, I strengthened my knowledge in:
-
-✅ Python application development
-
-✅ Graphical User Interface (GUI) design
-
-✅ Artificial Intelligence integration
-
-✅ Software architecture and modularization
-
-✅ User-centered design
-
-✅ Executable generation and software distribution
-
-✅ Problem solving and debugging
-
-✅ GitHub project organization and documentation
-
-🎯 Project Objective
-
-The purpose of MindAlive is to demonstrate how technology and AI can be used to create meaningful solutions that support cognitive health, encourage active aging, and improve the quality of life of older adults.
-
-This project reinforced my passion for software development, Artificial Intelligence, AI Agents, and the creation of technology-driven solutions that can positively impact people's lives.
-
-I am continuously learning and exploring new ways to combine AI, software engineering, and human-centered design to build innovative applications.
-
-💡 Feedback and suggestions are always welcome!
-
-
-
+Add a screenshot or short screen recording of a local run, note your OS and Python version, and describe a concrete interaction. Avoid presenting generated answers as verified facts.
