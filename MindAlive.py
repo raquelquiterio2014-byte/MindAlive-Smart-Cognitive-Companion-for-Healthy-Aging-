@@ -21,7 +21,7 @@ ctk.set_default_color_theme("blue")
 APP_NAME = "MindAlive"
 APP_VERSION = "1.0"
 
-API_KEY = ""  # Add your Gemini API key here
+API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 if genai and API_KEY:
     genai.configure(api_key=API_KEY)
@@ -309,7 +309,7 @@ class VivaMenteApp(ctk.CTk):
         if not model:
             answer = (
                 "Gemini API is not configured yet. "
-                "Please add your API key in the API_KEY variable."
+                "Set the GEMINI_API_KEY environment variable."
             )
         else:
             try:
